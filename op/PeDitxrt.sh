@@ -19,4 +19,4 @@ else
 fi
 wget https://github.com/peditx/easywrt/blob/aabd72ae4d7f86652325d6957738548f7cbe0ef8/op/alt.sh
 chmod +x alt.sh
-./alt
+./alt.sh
