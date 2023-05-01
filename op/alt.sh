@@ -1,6 +1,7 @@
 #!/bin/bash
-# Resize the second partition to the desired size
 echo "resizing Partition 2"
+# Resize the second partition to the desired size
+
 read -p "Enter the size of partition 2 (in GB): " size
     echo "Resizing partition 2..."
     parted /dev/sda resizepart 2 ${size}GB
