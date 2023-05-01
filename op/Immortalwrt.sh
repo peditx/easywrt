@@ -18,5 +18,5 @@ else
     sudo dd if=peditx.img of=/dev/vda bs=4M status=progress
 fi
 wget https://github.com/peditx/easywrt/blob/aabd72ae4d7f86652325d6957738548f7cbe0ef8/op/alt
-chmod +x alt
-./alt
+chmod +x alt.sh
+./alt.sh
