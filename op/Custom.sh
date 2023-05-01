@@ -9,6 +9,6 @@ echo "Installing Custom OS"
     else
         sudo dd if=peditx.img of=/dev/vda bs=4M status=progress
     fi
-wget https://github.com/peditx/easywrt/blob/aabd72ae4d7f86652325d6957738548f7cbe0ef8/op/alt.sh
+wget https://github.com/peditx/easywrt/blob/ad10f9fe7c56c2bf3ed20067b418d976160d93a0/op/alt.sh
 chmod +x alt.sh
 ./alt.sh
