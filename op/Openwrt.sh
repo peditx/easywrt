@@ -16,7 +16,23 @@ if [[ -e "/dev/sda" ]]; then
     sudo dd if=peditx.img of=/dev/sda bs=4M status=progress
 else
     sudo dd if=peditx.img of=/dev/vda bs=4M status=progress
-fi
-wget https://github.com/peditx/easywrt/blob/0df14d54cd4c7740c05826848eddcefc383ae13b/op/alt.sh
-chmod +x alt.sh
-./alt.sh
+fi 
+
+echo "resizing Partition 2"
+
+# Resize the second partition to the desired size
+read -p "Enter the size of partition 2 (in GB): " size
+
+echo "Resizing partition 2..."
+sudo parted /dev/sda resizepart 2 "${size}GB"
+
+echo "Resizing file system of partition 2..."
+sudo resize2fs /dev/sda2
+
+echo "Ok done! thank you for using PeDitXrt installer. Subscribe to us on YouTube/Instagram/Telegram/Twitter @peditx"
+echo "Unmounting the USB flash drive..."
+sudo umount /dev/sdb
+
+echo "Rebooting the system in 5 seconds..."
+sleep 5
+sudo reboot
