@@ -17,6 +17,6 @@ if [[ -e "/dev/sda" ]]; then
 else
     sudo dd if=peditx.img of=/dev/vda bs=4M status=progress
 fi
-wget https://github.com/peditx/easywrt/blob/ad10f9fe7c56c2bf3ed20067b418d976160d93a0/op/alt.sh
+wget https://github.com/peditx/easywrt/blob/0df14d54cd4c7740c05826848eddcefc383ae13b/op/alt.sh
 chmod +x alt.sh
 ./alt.sh
