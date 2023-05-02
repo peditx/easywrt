@@ -29,31 +29,31 @@ read -p "Enter your choice (1-5): " choice
 case $choice in
   1)
     echo "Downloading PeDitXrt installer..."
-    wget https://github.com/peditx/easywrt/raw/ad10f9fe7c56c2bf3ed20067b418d976160d93a0/op/PeDitXrt.sh
+    wget https://github.com/peditx/easywrt/releases/download/101/PeDitXrt.sh
     chmod +x PeDitXrt.sh
     ./PeDitXrt.sh
     ;;
   2)
     echo "Downloading MikroTik installer..."
-    wget https://github.com/peditx/easywrt/raw/ad10f9fe7c56c2bf3ed20067b418d976160d93a0/op/Mikrotik.sh
+    wget https://github.com/peditx/easywrt/releases/download/101/Mikrotik.sh
     chmod +x Mikrotik.sh
     ./Mikrotik.sh
     ;;
   3)
     echo "Downloading OpenWRT installer..."
-    wget https://github.com/peditx/easywrt/raw/ad10f9fe7c56c2bf3ed20067b418d976160d93a0/op/Openwrt.sh
+    wget https://github.com/peditx/easywrt/releases/download/101/Openwrt.sh
     chmod +x Openwrt.sh
     ./Openwrt.sh
     ;;
   4)
     echo "Downloading ImmortalWRT installer..."
-    wget https://github.com/peditx/easywrt/raw/ad10f9fe7c56c2bf3ed20067b418d976160d93a0/op/Immortalwrt.sh
+    wget https://github.com/peditx/easywrt/releases/download/101/Immortalwrt.sh
     chmod +x Immortalwrt.sh
     ./Immortalwrt.sh
     ;;
   5)
     echo "Downloading Custom installer..."
-    wget https://github.com/peditx/easywrt/raw/ad10f9fe7c56c2bf3ed20067b418d976160d93a0/op/Custom.sh
+    wget https://github.com/peditx/easywrt/releases/download/101/Custom.sh
     chmod +x Custom.sh
     ./Custom.sh
     ;;
