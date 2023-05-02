@@ -17,4 +17,4 @@ if [[ -e "/dev/sda" ]]; then
 else
     sudo dd if=peditx.img of=/dev/vda bs=4M status=progress
 fi 
-./resize.sh
+bash resize.sh
