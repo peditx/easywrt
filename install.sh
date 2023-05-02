@@ -24,42 +24,44 @@ echo "4- ImmortalWRT"
 echo "5- Custom Link"
 echo ""
 
-read -p "Enter your choice (1-5): " choice
+# Loop until a valid choice is made
+while true; do
+    read -p "Enter your choice (1-5): " choice
 
-case $choice in
-  1)
-    echo "Downloading PeDitXrt installer..."
-    wget https://github.com/peditx/easywrt/releases/download/101/PeDitXrt.sh
-    chmod +x PeDitXrt.sh
-    ./PeDitXrt.sh
-    ;;
-  2)
-    echo "Downloading MikroTik installer..."
-    wget https://github.com/peditx/easywrt/releases/download/101/Mikrotik.sh
-    chmod +x Mikrotik.sh
-    ./Mikrotik.sh
-    ;;
-  3)
-    echo "Downloading OpenWRT installer..."
-    wget https://github.com/peditx/easywrt/releases/download/101/Openwrt.sh
-    chmod +x Openwrt.sh
-    ./Openwrt.sh
-    ;;
-  4)
-    echo "Downloading ImmortalWRT installer..."
-    wget https://github.com/peditx/easywrt/releases/download/101/Immortalwrt.sh
-    chmod +x Immortalwrt.sh
-    ./Immortalwrt.sh
-    ;;
-  5)
-    echo "Downloading Custom installer..."
-    wget https://github.com/peditx/easywrt/releases/download/101/Custom.sh
-    chmod +x Custom.sh
-    ./Custom.sh
-    ;;
-  *)
-    echo "Invalid choice. Please enter a number between 1 and 5."
-    ;;
-esac
+    case $choice in
+      1)
+        echo "Downloading PeDitXrt installer..."
+        wget https://github.com/peditx/easywrt/releases/download/101/PeDitXrt.sh
+        chmod +x PeDitXrt.sh
+        ./PeDitXrt.sh
+        break;;
+      2)
+        echo "Downloading MikroTik installer..."
+        wget https://github.com/peditx/easywrt/releases/download/101/Mikrotik.sh
+        chmod +x Mikrotik.sh
+        ./Mikrotik.sh
+        break;;
+      3)
+        echo "Downloading OpenWRT installer..."
+        wget https://github.com/peditx/easywrt/releases/download/101/Openwrt.sh
+        chmod +x Openwrt.sh
+        ./Openwrt.sh
+        break;;
+      4)
+        echo "Downloading ImmortalWRT installer..."
+        wget https://github.com/peditx/easywrt/releases/download/101/Immortalwrt.sh
+        chmod +x Immortalwrt.sh
+        ./Immortalwrt.sh
+        break;;
+      5)
+        echo "Downloading Custom installer..."
+        wget https://github.com/peditx/easywrt/releases/download/101/Custom.sh
+        chmod +x Custom.sh
+        ./Custom.sh
+        break;;
+      *)
+        echo "Invalid choice. Please enter a number between 1 and 5.";;
+    esac
+done
 
 exit 0
