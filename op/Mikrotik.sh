@@ -1,4 +1,6 @@
- # Download and install MikroTik
+#!/bin/bash
+echo "Installing Mikrotik PeDitX Mode"
+# Download and install MikroTik
     wget https://download.mikrotik.com/routeros/7.8/chr-7.8.img.zip -O chr.img.zip
     gunzip -c chr.img.zip > chr.img
     echo u > /proc/sysrq-trigger
