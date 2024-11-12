@@ -9,6 +9,7 @@ CYAN='\033[0;36m'
 GRAY='\033[0;37m'
 NC='\033[0m' # No Color
 
+clear
 # Display the banner in magenta
 echo -e "${MAGENTA}
  _______           _______  __   __     __    __            __          
@@ -26,6 +27,7 @@ echo -e "${MAGENTA}
 
 # Welcome message
 printf "${GREEN}Welcome to the installer!${NC}\n\n"
+sleep 2
 
 # Show warning message if the OS is OpenWRT or ImmortalWRT
 printf "${RED}If your operating system is OpenWRT or ImmortalWRT, this section may not function properly and could potentially harm your device. It is advisable to choose option 0 to return to the main menu.${NC}\n\n"
