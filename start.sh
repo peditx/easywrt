@@ -10,7 +10,7 @@ GRAY='\033[0;37m'
 NC='\033[0m' # No Color
 
 # Display the banner in magenta
-printf "${MAGENTA}
+echo -e "${MAGENTA}
  _______           _______  __   __     __    __            __          
 |       \         |       \|  \ |  \   |  \  |  \          |  \         
 | ▓▓▓▓▓▓▓\ ______ | ▓▓▓▓▓▓▓\\▓▓_| ▓▓_  | ▓▓  | ▓▓ ______  _| ▓▓_        
