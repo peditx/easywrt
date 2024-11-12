@@ -14,7 +14,7 @@ echo "
 "
 # Install package updates
 sudo apt-get update
-sudo apt-get upgrade
+sudo apt-get upgrade -y
 
 # Install necessary packages
 sudo apt-get install gunzip gzip curl wget git
