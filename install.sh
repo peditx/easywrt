@@ -1,5 +1,18 @@
 #!/bin/bash
-echo -e "
+# Define color codes
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+BLUE='\033[0;34m'
+MAGENTA='\033[0;35m'
+CYAN='\033[0;36m'
+GRAY='\033[0;37m'
+NC='\033[0m' # No Color
+
+clear
+
+# Display the banner in magenta
+echo -e "${MAGENTA}
  _______           _______  __   __     __    __            __          
 |       \         |       \|  \ |  \   |  \  |  \          |  \         
 | ▓▓▓▓▓▓▓\ ______ | ▓▓▓▓▓▓▓\\▓▓_| ▓▓_  | ▓▓  | ▓▓ ______  _| ▓▓_        
@@ -9,9 +22,14 @@ echo -e "
 | ▓▓     | ▓▓▓▓▓▓▓▓ ▓▓__/ ▓▓ ▓▓ | ▓▓|  \  ▓▓ \▓▓\ ▓▓       | ▓▓|  \     
 | ▓▓      \▓▓     \ ▓▓    ▓▓ ▓▓  \▓▓  ▓▓ ▓▓  | ▓▓ ▓▓        \▓▓  ▓▓     
  \▓▓       \▓▓▓▓▓▓▓\▓▓▓▓▓▓▓ \▓▓   \▓▓▓▓ \▓▓   \▓▓\▓▓         \▓▓▓▓      
-                                           
-                                          I  N  S  T  A  L  L  E  R
-"
+                                         
+                                          I  N  S  T  A  L  L  E  R                                                   
+                                                   ${NC}\n"
+
+# Welcome message
+printf "${GREEN}Welcome to the installer!${NC}\n\n"
+sleep 3
+
 read -p "Press Enter to continue"
 # Welcome message
 echo "Welcome to PeDitXrt installation app"
