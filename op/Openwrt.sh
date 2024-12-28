@@ -5,9 +5,9 @@ echo "Installing OpenWrt"
 # Define CPU architecture and set download URL
 CPU_ARCH=$(uname -m)
 if [[ "$CPU_ARCH" == "x86_64" ]]; then
-    DOWNLOAD_URL="https://downloads.openwrt.org/releases/23.05.5/targets/x86/64/openwrt-22.03.4-x86-64-generic-squashfs-combined.img.gz"
+    DOWNLOAD_URL="https://downloads.openwrt.org/releases/23.05.4/targets/x86/64/openwrt-23.05.4-x86-64-generic-squashfs-combined-efi.img.gz"
 elif [[ "$CPU_ARCH" == "i686" ]]; then
-    DOWNLOAD_URL="https://downloads.openwrt.org/releases/23.05.5/targets/x86/generic/openwrt-22.03.4-x86-generic-generic-squashfs-combined.img.gz"
+    DOWNLOAD_URL="https://downloads.openwrt.org/releases/23.05.4/targets/x86/generic/openwrt-23.05.4-x86-generic-generic-squashfs-combined.img.gz"
 else
     echo "Unsupported CPU architecture: $CPU_ARCH"
     exit 1
